@@ -1,0 +1,47 @@
+<AddressList>
+  <Address>
+      <Address1>8782 Cloudleap Ct </Address1>
+      <City>Columbia</City>
+      <State>MD</State>
+      <Zip>21045</Zip>
+      <Country>USA</Country>
+      <PO_Box></PO_Box>
+      <MailingAddress></MailingAddress>
+      <ShippingAddress></ShippingAddress>
+  </Address>
+
+  <Address>
+    <Address1>4849 Connecticut Ave. NW</Address1>
+    <City>Washington</City>
+    <State>DC</State>
+    <Zip>20008</Zip>
+  </Address>
+
+  <Address>
+    <Address1>625 East Monroe Ave</Address1>
+    <City>Alexandria</City>
+    <State>VA</State>
+    <Zip>22301</Zip>
+    <Country>United States</Country>
+    <PO_Box />
+    <MailingAddress />
+    <ShippingAddress />
+  </Address>
+
+  <Address>
+    <Address1>6221 Summer Pond Drive</Address1>
+    <City>Centreville</City>
+    <State>VA</State>
+    <PostalCode>20121</PostalCode>
+    <CountyName>Fairfax</CountyName>
+    <Lead2LeaseEmail>lakesideboz@lead2lease.com</Lead2LeaseEmail>
+  </Address>
+
+  <Address AddressType="property">
+    <Address>960 Catbird Court </Address>
+    <City>Memphis</City>
+    <State>TN</State>
+    <PostalCode>38119</PostalCode>
+    <Email>ParkEstate.MAAC@lead2lease.com</Email>
+  </Address>
+</AddressList>
