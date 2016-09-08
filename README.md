@@ -1,47 +1,15 @@
-# MITS API
+# Fomat address json
 
-## Ruby version
-- `2.3.1`
+## Usage
 
+```rb
+require 'open-uri'
+require 'json'
 
-## Set up the Pow development server
+# Read a data file using the open-uri gem.
+json_array  = open("db/feeds/addresses.json") { |io| io.read }
+json_object = open("db/feeds/address.json") { |io| io.read }
 
-- [docs](http://pow.cx/)
-
-Install Pow
-
-```bash
-$ curl get.pow.cx | sh
+addresses = Address.from_json_array(json_array)
+a_address = Address.from_json_object(json_object)
 ```
-
-Create a symlink to the Pow server
-
-```bash
-$ cd ~/.pow
-$ ln -s /path/to/mits_api
-```
-
-Visit `http://mits_api.dev/`.
-
-## Check an API endpoint using curl
-
-```
-$ curl -H 'Accept: application/vnd.mits.v1' http://api.mits.dev/users/1
-```
-
-
-## How to run the test suite
-
-```bash
-$ bundle exec guard
-```
-
-or
-
-```bash
-$ rake test
-```
-
-
-## MITS Scmema
-- `./db/feeds/ash_a.xml`
