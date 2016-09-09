@@ -47,8 +47,8 @@ end
 
 describe Address do
 
-  it ".from_json_object" do
-    address = Address.from_json_object(json_object)
+  it ".from_json" do
+    address = Address.from_json(json_object)
     assert address.is_a? Address
     assert address.address == "8782 Cloudleap Ct "
   end
@@ -67,7 +67,7 @@ describe Address do
   end
 
   it "#to_h" do
-    address = Address.from_json_object(json_object)
+    address = Address.from_json(json_object)
     assert address.is_a? Address
     assert address.to_h.is_a? Hash
   end

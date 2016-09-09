@@ -6,7 +6,7 @@ a formatter from various JSON into our format.
 
 Usage:
   addresses = Address.from_json_array(json_array)
-  a_address = Address.from_json_object(json_object)
+  a_address = Address.from_json(json)
 
   a_address == addresses[3]
   a_address.to_h
@@ -14,7 +14,7 @@ Usage:
 =end
 
 class Address
-  attr_reader :source, :address, :city, :state, :zip, :coutry, :po_box
+  attr_reader :source, :address, :city, :state, :zip, :country, :po_box
 
   # Takes a hash that contains address info.
   # Normalize/sanitize each field and store in corresponding instance valiable.
@@ -36,8 +36,8 @@ class Address
   end
 
   # Takes a single JSON object and converts it into an Address objects.
-  def self.from_json_object(json_object)
-    new(JSON.parse(json_object, symbolize_names: true))
+  def self.from_json(json)
+    new(JSON.parse(json, symbolize_names: true))
   end
 
   # The hash representation of the address in our format.
@@ -53,6 +53,6 @@ class Address
 
   private
 
-  # Sanitizing utility methods here...
+  # Utility methods here...
 
 end
